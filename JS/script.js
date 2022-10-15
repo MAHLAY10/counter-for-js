@@ -4,9 +4,9 @@
 
 console.log('Hello world');
 
-let btn = document.getElementById('add')
+let button = document.getElementById('add')
 
-btn.addEventListener('click', function(){
+button.addEventListener('click', function(){
     console.log(add());
 })
 
