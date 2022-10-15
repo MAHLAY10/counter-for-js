@@ -1,0 +1,295 @@
+.flex-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-container2{
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.flex-container3{
+    display:flex;
+    flex-direction: row;
+}
+
+.flex-container4{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.flex-container5{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.flex-container6{
+    display:flex;
+    flex-wrap: no-wrap;
+}
+
+.flex-container7{
+    display:flex;
+    flex-wrap: wrap-reverse;
+}
+.flex-container8{
+    display:flex;
+    justify-content: flex-end;
+}
+.flex-container9{
+    display:flex;
+    justify-content: flex-start;
+}
+.flex-container10{
+    display:flex;
+    justify-content: space-between;
+}
+.flex-container11{
+    display:flex;
+    justify-content: space-around;
+}
+.flex-container12{
+    display:flex;
+    justify-content: center;
+}
+.flex-container13{
+    display:flex;
+    justify-content: baseline;
+}
+.flex-container14{
+    display:flex;
+    justify-content: first baseline;
+}
+.flex-container15{
+    display:flex;
+    justify-content: last baseline;
+}
+.flex-container16{
+    display:flex;
+    justify-content: safe;
+}
+.flex-container17{
+    display:flex;
+    height: 100px;
+    align-items: center;
+}
+.flex-container18{
+    display:flex;
+    height: 100px;
+    align-items: flex-start;
+}
+.flex-container19{
+    display:flex;
+    height: 100px;
+    align-items: flex-end;
+}
+.flex-container20{
+    display:flex;
+    height: 50px;
+    align-items: stretch;
+    background-color: DodgerBlue;
+}
+.flex-container21{
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    display:flex;
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+}
+.flex-container22{
+    display:flex;
+    height: 600px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    overflow: scroll;  
+}
+.flex-container23{
+    display:flex;
+    height: 600px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow: scroll;  
+}
+.flex-container24{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+#par1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+/* SCREEN SIZE - DESKTOP */ 
+@media only screen and (min-width: 600px)and (max-width: 992px) {
+    #par1 {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    gap: 50px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid: 200px 150px / 100px auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: 2 / 1 / span 2 / span 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container8 {
+    display: grid;
+    grid-template-areas: 
+    "myArea1 myArea1 myArea1"
+    "myArea2 myArea3 myArea3"
+    "myArea4 myArea5 myArea6"
+    "myArea7 myArea8 myArea8";
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container8{
+    grid-template-areas: 
+    "myArea1 myArea2"
+    "myArea3 myArea4"
+    "myArea5 myArea6"
+    "myArea7 myArea7"
+    "myArea8 myArea8";
+    }
+}
+
+.myArea1 {
+    grid-area: myArea1;
+}
+
+.myArea2 {
+    grid-area: myArea2;
+}
+
+.myArea3 {
+    grid-area: myArea3;
+}
+
+.myArea4 {
+    grid-area: myArea4;
+}
+
+.myArea5 {
+    grid-area: myArea5;
+}
+.myArea6 {
+    grid-area: myArea6;
+}
+.myArea7 {
+    grid-area: myArea7;
+}
+.myArea8 {
+    grid-area: myArea8;
+}
+
+.grid-container8 .myarea  {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container5 {
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container7 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.item2 {
+    grid-column: 1 / span 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
